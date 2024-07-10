@@ -6,7 +6,11 @@ function App() {
     <>
       <div className={"container"}>
         <section>
-          <h1>Stefany Carballo</h1>
+          <h1 className={'title'}>Stefany Carballo</h1>
+          <a className={'link'}
+              href="https://www.canva.com/design/DAEe1yyhwW4/Ui9VVetGH_dknScSxlQO_w/view?utm_content=DAEe1yyhwW4&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+          target={'_blank'}
+          >Curriculum Vitae</a>
         </section>
         <section className={'section-color'}>
           <h1>Personal Projects</h1>

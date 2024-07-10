@@ -86,8 +86,8 @@ $gris: #333333;
 }
 .neon-border {
 
-  border: 2px solid $gris; /* Color del borde fucsia */
-  border-radius: 10px; /* Ajusta según tus necesidades */
+  border: 2px solid $gris;
+  border-radius: 10px;
   padding: 20px;
   font-size: 24px;
   color: #fff;
@@ -109,6 +109,26 @@ $gris: #333333;
   }
 }
 
+.link{
+  padding: 3px 10px;
+  border-radius: 10px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  background-color: $gris;
+  text-decoration: none;
+  border: 2px solid $gris;
+
+  &:hover{
+    border: 2px solid $main; /* Color del borde fucsia */
+    box-shadow: 0 0 5px $main, 0 0 5px $main, 0 0 5px $main, 0 0 5px $main, 0 0 10px $main;
+  }
+
+}
+.title{
+  font-size: 7.2em;
+}
 .project{
   width: 20%;
 
