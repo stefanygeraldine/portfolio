@@ -1,0 +1,117 @@
+body {
+  background-color: #27133f;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Nunito Sans", sans-serif;
+  overflow-x: hidden;
+
+  // Estilo del scrollbar para navegadores WebKit
+  &::-webkit-scrollbar {
+    width: 12px; // Ancho del scrollbar vertical
+    height: 12px; // Altura del scrollbar horizontal
+  }
+
+  // Estilo del track del scrollbar
+  &::-webkit-scrollbar-track {
+    background: #1e1e1e; // Color de fondo del track
+  }
+
+  // Estilo del thumb del scrollbar (la parte que se mueve)
+  &::-webkit-scrollbar-thumb {
+    background-color: #616161; // Color del thumb
+    border-radius: 6px; // Bordes redondeados
+    border: 3px solid #1e1e1e; // Espacio entre el thumb y el track
+  }
+
+  // Estilo del thumb del scrollbar cuando se pasa el mouse sobre él
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #757575; // Color del thumb al pasar el mouse
+  }
+
+  // Estilo del thumb del scrollbar cuando se hace clic sobre él
+  &::-webkit-scrollbar-thumb:active {
+    background-color: #bdbdbd; // Color del thumb al hacer clic
+  }
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+canvas{
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+section{
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #f1f1f1;
+  padding: 3rem 0;
+  box-sizing: border-box;
+}
+
+.section-color{
+  background-color: rgb(0 0 0 / 19%);
+}
+$main: #f0f;
+$gris: #333333;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.chip{
+  background-color: $main;
+  padding: 3px 10px;
+  border-radius: 10px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 13px;
+}
+.neon-border {
+
+  border: 2px solid $gris; /* Color del borde fucsia */
+  border-radius: 10px; /* Ajusta según tus necesidades */
+  padding: 20px;
+  font-size: 24px;
+  color: #fff;
+  background-color: $gris;
+  text-align: center;
+  height: 20rem;
+  transition: 0.2s;
+  margin: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+  &:hover{
+    border: 2px solid $main; /* Color del borde fucsia */
+    box-shadow: 0 0 5px $main, 0 0 5px $main, 0 0 5px $main, 0 0 5px $main, 0 0 10px $main;
+  }
+}
+
+.project{
+  width: 20%;
+
+}
+
+
