@@ -25,9 +25,9 @@ const SvgIcon = (): ReactElement => {
 const Projects = (): ReactElement => {
     const projects = [
         {
-            name: "Shaders Patterns",
-            technologies: ["React", "ThreeJs", "GLSL"],
-            link: "https://stefanygeraldine.github.io/shaders-patterns/"
+            name: "Cute Game",
+            technologies: ["Pixi.js","Pixel Art", "Typescript"],
+            link: "https://github.com/stefanygeraldine/cute-game/"
         },
         {
             name: "Pokemon Challenge",
@@ -61,7 +61,7 @@ const Projects = (): ReactElement => {
         },
     ];
     return (
-        <div className={'container'}>
+        <div className={'container-cards'}>
 
             {projects.map((project: IProject, index: number) => (
                 <a  className={'project'} key={index} href={project.link} target={'_blank'}>

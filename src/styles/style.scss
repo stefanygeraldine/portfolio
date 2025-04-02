@@ -71,9 +71,22 @@ $gris: #333333;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem;
+  padding: 0;
   width: 100%;
+  box-sizing: border-box;
+}
+
+.container-cards {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr; // 1 columna por defecto (móvil)
+  gap: 1rem;
+  padding: 0 3rem;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr); // 3 columnas en escritorio
+  }
 }
 
 .chip{
@@ -86,12 +99,12 @@ $gris: #333333;
 }
 .neon-border {
 
-  border: 2px solid $gris;
+  border: 2px solid #773c77;
   border-radius: 10px;
   padding: 20px;
   font-size: 24px;
   color: #fff;
-  background-color: $gris;
+  background-color: #0000002e;
   text-align: center;
   height: 20rem;
   transition: 0.2s;
@@ -116,7 +129,7 @@ $gris: #333333;
   display: inline-block;
   font-size: 25px;
   color: #fff;
-  background-color: $gris;
+  background-color: transparent;
   text-decoration: none;
   border: 2px solid $gris;
 
@@ -128,9 +141,10 @@ $gris: #333333;
 }
 .title{
   font-size: 7.2em;
+  text-align: center;
 }
 .project{
-  width: 20%;
+  background-color: transparent;
 
 }
 
