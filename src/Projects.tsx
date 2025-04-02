@@ -59,6 +59,21 @@ const Projects = (): ReactElement => {
             technologies: ["React", "ThreeJs", "WebGl"],
             link: "https://stefanygeraldine.github.io/threejs-haunted-house/"
         },
+        {
+            name: "Tesla Workshop",
+            technologies: ["React", "ThreeJs", "WebGl"],
+            link: "https://stefanygeraldine.github.io/tesla-workshop-web-3d/"
+        },
+        {
+            name: "React Three Fiber",
+            technologies: ["React", "ThreeJs", "WebGl"],
+            link: "https://stefanygeraldine.github.io/react-three-fiber-practices/"
+        },
+        {
+            name: "Three Journey Basic Exercise",
+            technologies: ["ThreeJs", "WebGl"],
+            link: "https://stefanygeraldine.github.io/three-journey-basic-exercise/"
+        },
     ];
     return (
         <div className={'container-cards'}>
