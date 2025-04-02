@@ -1,6 +1,8 @@
 import Scene from "./three/Scene";
 import Projects from "./Projects.tsx";
+import AboutMe from "./About.tsx";
 import Name from "/name2.png";
+
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
             <Projects/>
         </section>
         <section>
-          <h1>React | Vue | ThreeJs | WebGl</h1>
+            <AboutMe/>
         </section>
       </div>
       <Scene />;
