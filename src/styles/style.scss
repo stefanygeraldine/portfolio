@@ -64,7 +64,7 @@ section{
 .section-color{
   background-color: rgb(0 0 0 / 19%);
 }
-$main: #f0f;
+$main: #fab74c;
 $gris: #333333;
 .container {
   display: flex;
@@ -90,7 +90,7 @@ $gris: #333333;
 }
 
 .chip{
-  background-color: $main;
+  background-color: #df6c9d;
   padding: 3px 10px;
   border-radius: 10px;
   margin: 5px;
@@ -99,12 +99,12 @@ $gris: #333333;
 }
 .neon-border {
 
-  border: 2px solid #773c77;
+  border: 2px solid $main;
   border-radius: 10px;
   padding: 20px;
   font-size: 24px;
   color: #fff;
-  background-color: #0000002e;
+  background-color: rgb(29 14 47 / 91%);
   text-align: center;
   height: 20rem;
   transition: 0.2s;

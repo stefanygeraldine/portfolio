@@ -45,7 +45,7 @@ camera.position.z = 5;
 groupCamera.add(camera);
 
 const parameters: IInitialParameters = {
-  materialColor: "#445567",
+  materialColor: "#fab74c",
   objectDistance: 5,
   currentSection: 0,
 };
