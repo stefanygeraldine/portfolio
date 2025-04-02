@@ -8,6 +8,7 @@ import Galaxy from "./Galaxy.tsx";
 import TorusKnot from "./TorusKnot.tsx";
 import Tube from "./Tube.tsx";
 import gradienTexture3 from "../assets/textures/gradients/3.jpg";
+import shape from "../assets/textures/gradients/magic_05.png";
 
 export interface ISize {
   width: number;
@@ -19,6 +20,7 @@ export interface IInitialParameters {
   objectDistance: number;
   material?: THREE.MeshToonMaterial;
   texture?: THREE.Texture;
+  shape?: THREE.Texture;
   currentSection: number;
 }
 
@@ -56,9 +58,10 @@ parameters.material = new THREE.MeshToonMaterial({
 
 const textureLoader = new THREE.TextureLoader();
 const gradienTexture = textureLoader.load(gradienTexture3);
+const gradienshape = textureLoader.load(shape);
 gradienTexture.magFilter = THREE.NearestFilter;
-
 parameters.texture = gradienTexture;
+parameters.shape = gradienshape;
 
 function Scene() {
   const [size, setSize] = useState<ISize>({
